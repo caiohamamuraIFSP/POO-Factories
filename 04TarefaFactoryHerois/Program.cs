@@ -24,14 +24,20 @@ namespace TarefaFactoryHerois
         static Heroi CriaArqueiro()
         {
             Arqueiro arqueiro = new Arqueiro();
+
+            // APAGAR //
             arqueiro.EquipaArma(new Arco());
             arqueiro.EquipaArmadura(new Couraca());
             arqueiro.PegaItem(new PocaoCura());
+            // ATÉ AQUI //
 
+            
+            //// USAR ISSO ////
             // FabricaHeroi fabricaArqueiro = new FabricaArqueiro();
             // arqueiro.EquipaArma(fabricaArqueiro.CriarArma());
             // arqueiro.EquipaArmadura(fabricaArqueiro.CriarArmadura());
             // arqueiro.PegaItem(fabricaArqueiro.CriarPocao());
+            ///////////////////
 
             return arqueiro;
         }
